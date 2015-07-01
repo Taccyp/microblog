@@ -10,12 +10,17 @@ class MicroblogTables < ActiveRecord::Migration
       t.string :fname
       t.string :lname
       t.string :email
-      t.datetime :birthdate
+      t.string :city
     end
 
     create_table :blogs do |t|
       t.integer :user_id
       t.string :content
+    end
+
+    create_table :user_blogs do |t|
+      t.integer :user_id
+      t.integer :blog_id
     end
 
   end
