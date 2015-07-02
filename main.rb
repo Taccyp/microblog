@@ -8,12 +8,11 @@ configure(:development){set :database, "sqlite3:blog.sqlite3"}
 
 set :sessions,  true
 
-get '/index' do
 
-
+get '/' do
   erb :index
-
 end
+
 
 get '/sign-up' do
   erb :sign_up
