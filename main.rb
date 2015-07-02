@@ -4,8 +4,8 @@ require './models'
 require 'bundler/setup'
 require 'rack-flash'
 
+configure(:development){set :database, "sqlite3:blog.sqlite3"}
 
-set :database, "sqlite3:microblog.sqlite3"
 set :sessions,  true
 
 get '/index' do
