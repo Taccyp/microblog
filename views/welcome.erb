@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<meta charset="UTC-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class='top'>
+		<div class='title'>
+			<a href="/welcome"><strong>thanx</strong>MATZ</a>
+		</div>
+
+		<div class='welcome'>
+			<a href="/profile"><%= @user.username %></a>
+		</div>
+	
+		<form class='logout' action="/log-out">
+			<input type='submit' value='Log out'>
+		</form>
+	</div>
+
+	<div class='content'>
+		<div class='leftc'>
+			<% @blogs.each do |blog| %>
+			<h1><%= blog.user.username unless blog.user.nil? %></h1>
+			<p><%= blog.content %></p>
+			<% end %>
+		</div>
+
+		<div class='rightc'>
+			<form class='postblog' method="POST" action="/welcome">
+				<label for="text">Post Text</label>
+				<br>
+				<textarea name="[blog]content"></textarea>
+				<br>
+				<input type="submit" value="Post!"> 
+			</form>
+		</div>
+	</div>
+
+
+</body>
+</html>

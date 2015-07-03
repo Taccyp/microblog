@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head> 
-	
-
-	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<meta charset="UTC-8">
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<div>
-		<form method="POST" action="/sign-in">
-			<label for="username">Username</label>
-			<input type="text" name="username">
-			<label for="password">Password</label>
-			<input type="password" name="password">
-			<input type="submit"> 
-		</form>
+
+	<div class='header'>
+		<strong>thanx</strong>MATZ
+	</div>
+
+	<form class='signin' method="POST" action="/sign-in">
+		<input type="text" placeholder="Username" name="username">
+		<input type="password" placeholder="Password" name="password">
+		<input type="submit" value="Sign in"> 
+	</form>
+
+	<div class='notmem'>
+		not already a member?
+	</div>
+
+	<form class='signup' action="/sign-up">
+		<input type='submit' value='SIGN UP NOW!'>
+	</form>
 
 
 </body>

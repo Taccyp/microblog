@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<meta charset="UTC-8">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<div class='top'>
+			<div class='title'>
+				<a href="/welcome"><strong>thanx</strong>MATZ</a>
+			</div>
+
+			<div class='welcome'>
+				<a href="/profile"><%= @user.username %></a>
+			</div>
+		
+			<form class='logout' action="/log-out">
+				<input type='submit' value='Log out'>
+			</form>
+		</div>
+
+		<div class='content'>
+			<div class='profiletable'>
+				<table>
+					<tr>
+						<td>Real Name</td>
+						<td><strong><%= @profile.fname << " " << @profile.lname %></strong></td>
+					</tr>
+					<tr>
+						<td>Email Address</td>
+						<td><strong><%= @profile.email %></strong></td>
+					</tr>
+					<tr>
+						<td>Home Town</td>
+						<td><strong><%= @profile.city %></strong></td>
+					</tr>
+				</table>
+
+				<form class='edit' action="/profile_edit">
+					<input type='submit' value='Edit Your Profile'>
+				</form>
+
+				<form class='delete' action="/deletecheck">
+					<input type='submit' value='Delete Your Profile'>
+				</form>
+			</div>
+
+
+		</div>
+	</body>
+</html>

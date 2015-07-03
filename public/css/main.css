@@ -1,0 +1,238 @@
+
+body {
+	background-color: #FA5C44;
+}
+
+.header {
+	font-family: "helvetica", sans-serif;
+	font-size: 45px;
+	color: #E6E6E6;
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 10px;
+}
+
+.signin, .signup, .restart {
+	display: block;
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+}
+.profileform {
+	display: block;
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.logout {
+	display: block;
+
+}
+
+input {
+    border: 5px solid #E6E6E6; 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    padding: 10px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 0 0px 0;
+}
+
+input:focus {
+}
+
+.notmem {
+	font-family: "helvetica", sans-serif;
+	font-size: 30px;
+	color: #E6E6E6;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.tobegin, .almost {
+	font-family: "helvetica", sans-serif;
+	font-size: 30px;
+	color: #E6E6E6;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.profileform label {
+	font-family: "helvetica", sans-serif;
+	font-size: 20px;
+	color: #E6E6E6;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.top {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	background-color: #5E4E67;
+	height: 70px;
+	/*border-bottom: solid #E6E6E6 5px;*/
+}
+
+.title {
+	font-family: "helvetica", sans-serif;
+	font-size: 45px;
+	color: #E6E6E6;
+	width: 40%;
+	margin: 0 auto;
+	text-align: center;
+}
+.title a {
+	font-family: "helvetica", sans-serif;
+	font-size: 45px;
+	color: #E6E6E6;
+	text-decoration: none;
+
+}
+.title a:hover {
+	font-family: "helvetica", sans-serif;
+	font-size: 45px;
+	color: #E6E6E6;
+}
+
+.welcome {
+	position: absolute;
+	left: 3px;
+	bottom: 3px;
+	text-align: center;
+}
+.welcome a {
+	font-family: "helvetica", sans-serif;
+	font-size: 20px;
+	color: #E6E6E6;
+	text-decoration: none;
+}
+.welcome a:hover {
+	font-family: "helvetica", sans-serif;
+	font-size: 20px;
+	color: #E6E6E6;
+	text-decoration: underline;
+}
+
+
+
+
+
+.logout {
+	position: absolute;
+	right: 3px;
+	bottom: 3px;
+}
+.logout input {
+		margin-bottom: 0;
+
+}
+
+.content {
+	width: 100%;
+	margin: 100px auto;
+}
+
+.leftc {
+	float: left;
+	width: 60%;
+	border: solid white 2px;
+	height: 1000px
+}
+
+.rightc {
+	float: right;
+	width: 35%;
+		border: solid white 2px;
+
+}
+
+
+.postblog label {
+	font-family: "helvetica", sans-serif;
+	font-size: 20px;
+	color: #E6E6E6;
+}
+.postblog textarea {
+	resize: none;
+	width: 80%;
+	height: 200px;
+    border: 5px solid #E6E6E6; 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    padding: 10px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 auto;
+}
+
+/*------------------------------------------------------*/
+.profiletable {
+	font-size: 1.5vw;
+	width: 80%;
+	margin: 120px auto 120px auto;
+}
+
+
+
+table {
+	table-layout: fixed;
+	width: 70%;
+	margin: 0 auto;
+	font-family: "helvetica", sans-serif;
+	color: #E6E6E6;
+}
+
+table tr:nth-child(odd) {
+   background-color: rgba(94,78,103,.6);
+}
+table tr:nth-child(even) {
+   background-color: rgba(94,78,103,.6);
+}
+table td:nth-child(odd) {
+	padding: 7px;
+	text-align: right;
+	border-left: solid #E6E6E6 5px;
+	/*border-radius: 20px 0 0 20px;*/
+}
+table td:nth-child(even) {
+	padding: 7px;
+	text-align: left;
+	border-right: solid #E6E6E6 5px;
+	/*border-radius: 0 20px 20px 0;*/
+}
+
+.edit {
+	float: left;
+}
+.edit input {
+	width: 200px;
+}
+.edit input.value {
+	color: red;
+}
+.delete {
+	float: right;
+}
+.delete input {
+	width: 200px;
+}
+
