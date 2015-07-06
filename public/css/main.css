@@ -351,3 +351,7 @@ table td:nth-child(even) {
 	padding: 5px;
 	height: 685px
 }
+
+.profile_feed {
+	margin: 0 auto;
+}

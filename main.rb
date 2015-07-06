@@ -92,6 +92,8 @@ get '/profile' do
   @profile.email
   @profile.city
 
+  @blogs = Blog.where(user_id: session[:user_id])
+
   erb :profile
 end
 

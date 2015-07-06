@@ -46,6 +46,14 @@
 				</form>
 			</div>
 
+			
+			<div class='profile_feed'>
+		<div class='leftc'>
+				<% @blogs.reverse.each do |blog| %>
+			<div><%= blog.user.username unless blog.user.nil? %><span><%= blog.created_at %></span></div>
+			<p><%= blog.content %></p>
+				<% end %>
+		</div>
 
 		</div>
 	</body>
