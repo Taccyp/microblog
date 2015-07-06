@@ -49,7 +49,7 @@
 
 			<div class='profile_feed'>
 			<h1><%= @user.username %>'s Posts</h1>
-		<div class='leftc'>
+		<div class='ownposts'>
 				<% @blogs.reverse.each do |blog| %>
 			<div><%= blog.user.username unless blog.user.nil? %><span><%= blog.created_at %></span></div>
 			<p><%= blog.content %></p>

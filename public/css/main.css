@@ -352,10 +352,47 @@ table td:nth-child(even) {
 	height: 685px
 }
 
-.profile_feed {
-	margin: 0 auto;
+
+
+.profile_feed h1{
+margin-top: 200px;
+color: #E6E6E6;
+text-align: center;
+border-bottom: solid #E6E6E6 2px;
 }
 
-.profile_feed h1 {
-	color: #E6E6E6;
+
+
+.ownposts {
+width: 50%;
+margin: 0 auto;
+/*	border-left: solid #E6E6E6 2px;
+border-top: solid #E6E6E6 2px;
+border-radius: 15px 0 0 0 ;*/
+height: 500px
+}
+.ownposts div {
+font-family: "helvetica", sans-serif;
+font-weight: bold;
+background-color: #E6E6E6;
+margin-bottom: 0px;
+margin-top: 15px;
+padding: 2px 2px 2px 10px;
+border-radius: 15px 15px 0 0 ;
+}
+.ownposts p {
+font-family: "helvetica", sans-serif;
+font-size: .9em;
+background-color: #E6E6E6;
+margin-top: 1px;
+margin-bottom: 20px;
+padding: 3px;
+border-bottom: solid white 2px;
+}
+.ownposts span {
+float: right;
+margin-right: 20px;
+font-weight: lighter;
+font-size: 10px;
+text-align: right;
 }
