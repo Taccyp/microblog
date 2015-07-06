@@ -1,6 +1,7 @@
 
 body {
 	background-color: #FA5C44;
+	font-family: "helvetica", sans-serif;
 }
 
 .header {
@@ -10,6 +11,18 @@ body {
 	text-align: center;
 	margin-top: 80px;
 	margin-bottom: 10px;
+}
+.header a {
+	font-family: "helvetica", sans-serif;
+	font-size: 45px;
+	color: #E6E6E6;
+	text-decoration: none;
+
+}
+.header a:hover {
+	font-family: "helvetica", sans-serif;
+	font-size: 45px;
+	color: #E6E6E6;
 }
 
 .signin, .signup, .restart {
@@ -24,6 +37,15 @@ body {
 	width: 50%;
 	margin: 0 auto;
 }
+.profileform label {
+	font-family: "helvetica", sans-serif;
+	font-size: 20px;
+	color: #E6E6E6;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 
 .logout {
 	display: block;
@@ -43,11 +65,11 @@ input {
             0 0 16px rgba(0,0,0,0.1); 
     padding: 10px;
     background: rgba(255,255,255,0.5);
-    margin: 0 0 0px 0;
+    margin: 0 0 10px 0;
+   	color: #5E4E67;
 }
 
-input:focus {
-}
+
 
 .notmem {
 	font-family: "helvetica", sans-serif;
@@ -67,14 +89,6 @@ input:focus {
 	margin-bottom: 10px;
 }
 
-.profileform label {
-	font-family: "helvetica", sans-serif;
-	font-size: 20px;
-	color: #E6E6E6;
-	text-align: center;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
 
 .top {
 	position: absolute;
@@ -129,7 +143,6 @@ input:focus {
 
 
 
-
 .logout {
 	position: absolute;
 	right: 3px;
@@ -137,38 +150,65 @@ input:focus {
 }
 .logout input {
 		margin-bottom: 0;
+		color: #5E4E67;
 
 }
 
 .content {
-	width: 100%;
+	width: 90%;
 	margin: 100px auto;
 }
 
 .leftc {
 	float: left;
-	width: 60%;
-	border: solid white 2px;
+	width: 50%;
+	border-left: solid #E6E6E6 2px;
+	border-top: solid #E6E6E6 2px;
+	border-radius: 15px 0 0 0 ;
 	height: 1000px
+}
+.leftc div {
+	font-family: "helvetica", sans-serif;
+	font-weight: bold;
+	background-color: #E6E6E6;
+	margin-bottom: 0px;
+	margin-top: 15px;
+	padding: 2px 2px 2px 10px;
+	border-radius: 0 15px 0 0 ;
+}
+.leftc p {
+	font-family: "helvetica", sans-serif;
+	font-size: .9em;
+	background-color: #E6E6E6;
+	margin-top: 1px;
+	margin-bottom: 20px;
+	padding: 3px;
+	border-bottom: solid white 2px;
+}
+.leftc span {
+	float: right;
+	margin-right: 20px;
+	font-weight: lighter;
+	font-size: 10px;
+	text-align: right;
 }
 
 .rightc {
+
 	float: right;
 	width: 35%;
-		border: solid white 2px;
-
 }
-
 
 .postblog label {
 	font-family: "helvetica", sans-serif;
 	font-size: 20px;
 	color: #E6E6E6;
+	margin-left: -.8px;
 }
 .postblog textarea {
 	resize: none;
-	width: 80%;
-	height: 200px;
+	width: 90%;
+	height: 150px;
     border: 5px solid #E6E6E6; 
     -webkit-box-shadow: 
       inset 0 0 8px  rgba(0,0,0,0.1),
@@ -181,8 +221,27 @@ input:focus {
             0 0 16px rgba(0,0,0,0.1); 
     padding: 10px;
     background: rgba(255,255,255,0.5);
-    margin: 0 auto;
+    margin: -5px auto 0 auto;
 }
+
+.userlist {
+	text-align: right;
+}
+.userlist div {
+	font-size: 22px;
+	color: #E6E6E6;
+	margin-bottom: 6px;
+}
+.userlist span {
+	font-size: 12px;
+}
+.userlist p {
+	color: #E6E6E6;
+	margin: 0;
+}
+
+
+
 
 /*------------------------------------------------------*/
 .profiletable {
@@ -196,7 +255,7 @@ input:focus {
 table {
 	table-layout: fixed;
 	width: 70%;
-	margin: 0 auto;
+	margin: 50px auto;
 	font-family: "helvetica", sans-serif;
 	color: #E6E6E6;
 }
@@ -222,17 +281,73 @@ table td:nth-child(even) {
 
 .edit {
 	float: left;
+	text-align: center;
+	
 }
 .edit input {
+	color: #5E4E67;
 	width: 200px;
 }
-.edit input.value {
-	color: red;
-}
+
 .delete {
 	float: right;
 }
 .delete input {
+	color: #5E4E67;
 	width: 200px;
 }
 
+
+
+.editinputs {
+	display: block;
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+}
+.editinputs label {
+	font-family: "helvetica", sans-serif;
+	font-size: 20px;
+	color: #E6E6E6;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+.editinputs input {
+	color: #5E4E67;
+}
+
+
+
+
+.sure {
+	font-family: "helvetica", sans-serif;
+	font-size: 45px;
+	color: #E6E6E6;
+	text-align: center;
+	margin-top: 150px;
+	margin-bottom: 50px;
+}
+
+.fuckoff {
+	font-family: "helvetica", sans-serif;
+	font-size: 45px;
+	color: #E6E6E6;
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 10px;
+	transition-duration: 1s;
+}
+.fuckoff:hover {
+	margin: 500px 0 0 400px;
+	opacity: 0;
+}
+
+
+.userlist {
+	border-right: solid #E6E6E6 2px;
+	border-top: solid #E6E6E6 2px;
+	border-radius: 0 15px 0 0 ;
+	padding: 5px;
+	height: 685px
+}

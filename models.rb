@@ -1,3 +1,5 @@
+ActiveRecord::Base.default_timezone = :local
+
 class User < ActiveRecord::Base
  has_one :profile
  has_many :blogs
@@ -9,12 +11,5 @@ end
 
 class Blog < ActiveRecord::Base
  belongs_to :user
-end
-
-
-
-
-
-
-  
+end  
 

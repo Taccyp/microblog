@@ -22,23 +22,29 @@
 
 	<div class='content'>
 		<div class='leftc'>
-			<% @blogs.each do |blog| %>
-			<h1><%= blog.user.username unless blog.user.nil? %></h1>
+				<% @blogs.reverse.each do |blog| %>
+			<div><%= blog.user.username unless blog.user.nil? %><span><%= blog.created_at %></span></div>
 			<p><%= blog.content %></p>
-			<% end %>
+				<% end %>
 		</div>
 
 		<div class='rightc'>
 			<form class='postblog' method="POST" action="/welcome">
-				<label for="text">Post Text</label>
+				<label for="text">make a statement</label>
 				<br>
 				<textarea name="[blog]content"></textarea>
 				<br>
 				<input type="submit" value="Post!"> 
 			</form>
+
+			<div class='userlist'>
+				<div><strong>thanx</strong>MATZ<span>users :</span></div>
+						<% @list.each do |user| %>
+					<p><%= user.username %></p>
+						<% end %>
+				
+			</div>
 		</div>
 	</div>
-
-
 </body>
 </html>

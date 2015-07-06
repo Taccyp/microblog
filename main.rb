@@ -27,7 +27,9 @@ post '/sign-in' do
   end 
 end
 
-
+get '/login-failed' do
+  erb :fuckoff
+end
 
 
 
@@ -64,6 +66,8 @@ get '/welcome' do
   @user = User.where(id: session[:user_id]).first
   @user.username
   @blogs = Blog.last(10)
+  @list = User.all
+
   erb :welcome
 end
 
@@ -155,7 +159,8 @@ end
 
 
 
- # @blog.user_id
+ # @blog.user_id config.active_record.default_timezone = :local
+
 
 
 

@@ -14,8 +14,10 @@
 ActiveRecord::Schema.define(version: 20150701160125) do
 
   create_table "blogs", force: :cascade do |t|
-    t.integer "user_id"
-    t.string  "content"
+    t.integer  "user_id"
+    t.string   "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "profiles", force: :cascade do |t|

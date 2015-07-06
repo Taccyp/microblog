@@ -14,18 +14,21 @@
 			<div class='welcome'>
 				<a href="/profile"><%= @user.username %></a>
 			</div>
-		
+			
 			<form class='logout' action="/log-out">
 				<input type='submit' value='Log out'>
 			</form>
 		</div>
 
 		<div class='content'>
-	
-		<form class='deletechecl' method="POST" action="/fuckoff">
-			<input type='submit' value='DELETE YOUR PROFILE'>
-		</form>
 
+			<div class='sure'>
+				<div>Are you sure <%= @user.username %>?</div>
+
+				<form class='deletechecl' method="POST" action="/fuckoff">
+					<input type='submit' value='YES. DELETE IT. DELETE IT ALL. NOW!'>
+				</form>
+			</div>
 
 		</div>
 	</body>
