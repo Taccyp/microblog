@@ -355,3 +355,7 @@ table td:nth-child(even) {
 .profile_feed {
 	margin: 0 auto;
 }
+
+.profile_feed h1 {
+	color: #E6E6E6;
+}
