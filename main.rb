@@ -111,6 +111,22 @@ post '/profile_edit' do
   redirect '/profile'
 end
 
+get '/profile/:username' do
+  #puts params.inspect
+  @user = User.where(id: session[:user_id]).first
+  @temp = User.where(username: params[:username]).first
+  @profile = Profile.where(user_id: @temp[:id]).first
+  @profile.fname
+  @profile.lname
+  @profile.email
+  @profile.city
+
+  @blogs = Blog.where(user_id: @temp[:id])
+
+
+  erb :profile_others
+end
+
 
 
 
