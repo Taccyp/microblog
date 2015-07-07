@@ -40,7 +40,7 @@
 			<div class='userlist'>
 				<div><strong>thanx</strong>MATZ<span>users :</span></div>
 						<% @list.each do |user| %>
-					<p><a href=../profile/<%=user.username %>><%= user.username %></a></p>
+					<a href=../profile/<%=user.username %>><%= user.username %></a>
 						<% end %>
 				
 			</div>

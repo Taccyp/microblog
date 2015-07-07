@@ -3,7 +3,7 @@
 	<head> 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<meta charset="UTC-8">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
 	</head>
 	<body>
 		<div class='top'>
@@ -21,7 +21,9 @@
 		</div>
 
 		<div class='content'>
-			<div class='profiletable'>
+			<h1 class="othersprofile"><%= @temp.username %>'s Profile</h1>
+			
+			<div class='otherstable'>
 				<table>
 					<tr>
 						<td>Real Name</td>
@@ -36,20 +38,12 @@
 						<td><strong><%= @profile.city %></strong></td>
 					</tr>
 				</table>
-
-				<form class='edit' action="/profile_edit">
-					<input type='submit' value='Edit Your Profile'>
-				</form>
-
-				<form class='delete' action="/deletecheck">
-					<input type='submit' value='Delete Your Profile'>
-				</form>
 			</div>
 
 
-			<div class='profile_feed'>
+			<div class='othersfeed'>
 			<h1><%= @temp.username %>'s Posts</h1>
-		<div class='leftc'>
+		<div class='othersposts'>
 				<% @blogs.reverse.each do |blog| %>
 			<div><%= blog.user.username unless blog.user.nil? %><span><%= blog.created_at %></span></div>
 			<p><%= blog.content %></p>
